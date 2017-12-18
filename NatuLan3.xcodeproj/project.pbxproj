@@ -12,6 +12,12 @@
 		DA15FEC51FE7B0CA00D44825 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA15FEC31FE7B0CA00D44825 /* Main.storyboard */; };
 		DA15FEC71FE7B0CA00D44825 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA15FEC61FE7B0CA00D44825 /* Assets.xcassets */; };
 		DA15FECA1FE7B0CA00D44825 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA15FEC81FE7B0CA00D44825 /* LaunchScreen.storyboard */; };
+		DA15FED31FE7B49400D44825 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FED21FE7B49400D44825 /* Word.swift */; };
+		DA15FED51FE7B4BC00D44825 /* Mean.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FED41FE7B4BC00D44825 /* Mean.swift */; };
+		DA15FED71FE7B52700D44825 /* Surface.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FED61FE7B52700D44825 /* Surface.swift */; };
+		DA15FED91FE7B58600D44825 /* SurfaceMeanRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FED81FE7B58600D44825 /* SurfaceMeanRelation.swift */; };
+		DA15FEDC1FE7B6FD00D44825 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FEDB1FE7B6FD00D44825 /* Sample.swift */; };
+		DA15FEDF1FE7B75400D44825 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FEDE1FE7B75400D44825 /* Rule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		DA15FEC61FE7B0CA00D44825 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA15FEC91FE7B0CA00D44825 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA15FECB1FE7B0CA00D44825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA15FED21FE7B49400D44825 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		DA15FED41FE7B4BC00D44825 /* Mean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mean.swift; sourceTree = "<group>"; };
+		DA15FED61FE7B52700D44825 /* Surface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Surface.swift; sourceTree = "<group>"; };
+		DA15FED81FE7B58600D44825 /* SurfaceMeanRelation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfaceMeanRelation.swift; sourceTree = "<group>"; };
+		DA15FEDB1FE7B6FD00D44825 /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
+		DA15FEDE1FE7B75400D44825 /* Rule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,9 @@
 		DA15FEBE1FE7B0CA00D44825 /* NatuLan3 */ = {
 			isa = PBXGroup;
 			children = (
+				DA15FEDD1FE7B74B00D44825 /* Rule */,
+				DA15FEDA1FE7B6ED00D44825 /* Know */,
+				DA15FED11FE7B48100D44825 /* Lang */,
 				DA15FEBF1FE7B0CA00D44825 /* AppDelegate.swift */,
 				DA15FEC11FE7B0CA00D44825 /* ViewController.swift */,
 				DA15FEC31FE7B0CA00D44825 /* Main.storyboard */,
@@ -62,6 +77,33 @@
 				DA15FECB1FE7B0CA00D44825 /* Info.plist */,
 			);
 			path = NatuLan3;
+			sourceTree = "<group>";
+		};
+		DA15FED11FE7B48100D44825 /* Lang */ = {
+			isa = PBXGroup;
+			children = (
+				DA15FED21FE7B49400D44825 /* Word.swift */,
+				DA15FED41FE7B4BC00D44825 /* Mean.swift */,
+				DA15FED61FE7B52700D44825 /* Surface.swift */,
+				DA15FED81FE7B58600D44825 /* SurfaceMeanRelation.swift */,
+			);
+			path = Lang;
+			sourceTree = "<group>";
+		};
+		DA15FEDA1FE7B6ED00D44825 /* Know */ = {
+			isa = PBXGroup;
+			children = (
+				DA15FEDB1FE7B6FD00D44825 /* Sample.swift */,
+			);
+			path = Know;
+			sourceTree = "<group>";
+		};
+		DA15FEDD1FE7B74B00D44825 /* Rule */ = {
+			isa = PBXGroup;
+			children = (
+				DA15FEDE1FE7B75400D44825 /* Rule.swift */,
+			);
+			path = Rule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +180,12 @@
 			files = (
 				DA15FEC21FE7B0CA00D44825 /* ViewController.swift in Sources */,
 				DA15FEC01FE7B0CA00D44825 /* AppDelegate.swift in Sources */,
+				DA15FED51FE7B4BC00D44825 /* Mean.swift in Sources */,
+				DA15FED31FE7B49400D44825 /* Word.swift in Sources */,
+				DA15FED91FE7B58600D44825 /* SurfaceMeanRelation.swift in Sources */,
+				DA15FEDF1FE7B75400D44825 /* Rule.swift in Sources */,
+				DA15FEDC1FE7B6FD00D44825 /* Sample.swift in Sources */,
+				DA15FED71FE7B52700D44825 /* Surface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

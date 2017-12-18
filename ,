@@ -1,0 +1,43 @@
+platform :ios, '10.0'
+use_frameworks!
+
+def common_install
+    pod 'Alamofire', '~> 4.5'
+    pod 'AFNetworking', '~> 3.0'
+    pod 'CleanroomLogger'
+    pod 'Crashlytics'
+    pod 'Device', '~> 3.0.3'
+    pod 'Download-Font-iOS', '~> 1.0.0'
+    pod 'Fabric'
+    pod 'FXBlurView'
+    pod 'MDCSwipeToChoose'
+    pod 'JWTDecode'
+    pod 'KeychainAccess'
+    pod 'MWPhotoBrowser'
+    pod 'SDWebImage', '~> 3.7'
+    pod 'SVProgressHUD'
+    
+    #social
+    pod 'FBSDKCoreKit'
+    pod 'FBSDKShareKit'
+    pod 'FBSDKLoginKit'
+
+    #for debug
+    # pod 'TouchVisualizer'
+	
+    #for Swift
+    pod 'SwiftyJSON'
+    pod 'RealmSwift'
+
+end
+
+target "Kenchikukatachi" do
+	common_install
+end
+target "KenchikukatachiDev" do
+	common_install
+end
+target "KenchikukatachiTests" do
+	common_install
+end
+

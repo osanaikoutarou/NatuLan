@@ -18,6 +18,8 @@
 		DA15FED91FE7B58600D44825 /* SurfaceMeanRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FED81FE7B58600D44825 /* SurfaceMeanRelation.swift */; };
 		DA15FEDC1FE7B6FD00D44825 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FEDB1FE7B6FD00D44825 /* Sample.swift */; };
 		DA15FEDF1FE7B75400D44825 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FEDE1FE7B75400D44825 /* Rule.swift */; };
+		DAB5BA5C206B654A00102157 /* Speech.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB5BA5B206B654A00102157 /* Speech.swift */; };
+		DAB5BA5E206B659400102157 /* Knowlege.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB5BA5D206B659400102157 /* Knowlege.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		DA15FED81FE7B58600D44825 /* SurfaceMeanRelation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfaceMeanRelation.swift; sourceTree = "<group>"; };
 		DA15FEDB1FE7B6FD00D44825 /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 		DA15FEDE1FE7B75400D44825 /* Rule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
+		DAB5BA5B206B654A00102157 /* Speech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speech.swift; sourceTree = "<group>"; };
+		DAB5BA5D206B659400102157 /* Knowlege.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knowlege.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 		DA15FEBE1FE7B0CA00D44825 /* NatuLan3 */ = {
 			isa = PBXGroup;
 			children = (
+				DAB5BA5A206B652000102157 /* Speech */,
 				DA15FEDD1FE7B74B00D44825 /* Rule */,
 				DA15FEDA1FE7B6ED00D44825 /* Know */,
 				DA15FED11FE7B48100D44825 /* Lang */,
@@ -94,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				DA15FEDB1FE7B6FD00D44825 /* Sample.swift */,
+				DAB5BA5D206B659400102157 /* Knowlege.swift */,
 			);
 			path = Know;
 			sourceTree = "<group>";
@@ -104,6 +110,14 @@
 				DA15FEDE1FE7B75400D44825 /* Rule.swift */,
 			);
 			path = Rule;
+			sourceTree = "<group>";
+		};
+		DAB5BA5A206B652000102157 /* Speech */ = {
+			isa = PBXGroup;
+			children = (
+				DAB5BA5B206B654A00102157 /* Speech.swift */,
+			);
+			path = Speech;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAB5BA5C206B654A00102157 /* Speech.swift in Sources */,
 				DA15FEC21FE7B0CA00D44825 /* ViewController.swift in Sources */,
 				DA15FEC01FE7B0CA00D44825 /* AppDelegate.swift in Sources */,
 				DA15FED51FE7B4BC00D44825 /* Mean.swift in Sources */,
@@ -186,6 +201,7 @@
 				DA15FEDF1FE7B75400D44825 /* Rule.swift in Sources */,
 				DA15FEDC1FE7B6FD00D44825 /* Sample.swift in Sources */,
 				DA15FED71FE7B52700D44825 /* Surface.swift in Sources */,
+				DAB5BA5E206B659400102157 /* Knowlege.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +275,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -310,7 +326,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

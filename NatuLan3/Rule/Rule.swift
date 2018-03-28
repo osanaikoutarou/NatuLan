@@ -8,10 +8,66 @@
 
 import UIKit
 
-class Rule: NSObject {
+class Rule {
+    var identifier:String = ""
+    var subject:Any?    // 主題
+    // string
+    var decode:[Any] = []
+//    var stringArgs:[CVarArg] = []
 
-    func hoge(m1:Mean,m2:Mean) {
-        
-    }
-    
 }
+
+class RuleEqual: Rule {
+    // a == b
+    var a:Mean?
+    var b:Mean?
+    
+    init(a:Mean, b:Mean) {
+        super.init()
+        
+        self.a = a
+        self.b = b
+        
+        self.identifier = "Equal"
+        self.decode = [a,"は",b]
+//        self.stringArgs = [a,b]
+    }
+}
+
+class RuleSubset: Rule {
+    // 属している
+    // ソクラテスは人間である
+    // aはbである
+    var a:Mean?
+    var b:Mean?
+    
+    init(a:Mean, b:Mean) {
+        super.init()
+        
+        self.a = a
+        self.b = b
+        
+        self.identifier = "Subset"
+        self.subject = a
+        self.decode = [a,"は",b]
+    }
+}
+
+class RuleSubject: Rule {
+    // 主題がx
+    var a:Mean?
+    var b:Mean?
+    
+    init(a:Mean, b:Mean) {
+        super.init()
+        
+        self.a = a
+        self.b = b
+        
+        self.identifier = "Subject"
+        self.subject = a
+        self.decode = [a,"が",b]
+    }
+}
+
+

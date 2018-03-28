@@ -10,15 +10,27 @@ import UIKit
 
 class Sample: NSObject {
     
-    // AがB
-    public var meanAgaB
+    var knowlege:Knowlege
     
-    init() {
-        meanAgaB = Mean()
-        meanAgaB.in
+    override init() {
         
+        // ソクラテスが人間である
+        let so = Mean()
+        so.isAtom = true
+        so.identifier = "sokuratesu"
+        let nin = Mean()
+        nin.isAtom = true
+        nin.identifier = "ningen"
         
+        let sokuratesuganingen = Mean()
+        let rule = RuleSubject.init(a: so, b: nin)
+        sokuratesuganingen.ruleSet.append(rule)
+
+        knowlege = Knowlege()
+        knowlege.surfaceMeanRelations.append(SurfaceMeanRelation.init(m: so, s: Surface.init(s: "ソクラテス")))
+        knowlege.surfaceMeanRelations.append(SurfaceMeanRelation.init(m: nin, s: Surface.init(s: "人間")))
         
+        print(Speech().speech(mean: sokuratesuganingen, knowlege: knowlege))
     }
     
     

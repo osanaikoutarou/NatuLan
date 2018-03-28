@@ -14,6 +14,13 @@ class SurfaceMeanRelation: NSObject {
     
     init(m:Mean , s:Surface) {
         mean = m
-        Surface = s
+        surface = s
+    }
+    
+    func isEqual(mean m:Mean) -> Bool {
+        if self.mean.identifier == m.identifier {
+            return true
+        }
+        return false
     }
 }

@@ -9,17 +9,21 @@
 import UIKit
 
 class Mean: NSObject {
-    public
-    // 意味素
-    let isAtom:Bool = false
     
-    let ruleSet:[Rule] = []
+    var identifier:String = ""
+    
+    // 意味素
+    var isAtom:Bool = false
+    
+    var ruleSet:[Rule] = []
     // 内包
-    let inclusionMeans:[Mean] = []
+    var inclusionMeans:[Mean] = []
 
-    //require
-    let requireSet:[Dictionary<Mean:Mean>] = []
-    //optional
-    let optionalSet:[Dictionary<Mean:Mean>] = []
+    // subject
+    
+//    //require
+//    let requireSet:[Dictionary<Mean:Mean>] = []
+//    //optional
+//    let optionalSet:[Dictionary<Mean:Mean>] = []
     
 }
